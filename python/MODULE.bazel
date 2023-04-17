@@ -1,0 +1,11 @@
+bazel_dep(name = "rules_python", version = "0.20.0")
+
+pip = use_extension("@rules_python//python:extensions.bzl", "pip")
+
+pip.parse(
+    name = "pip",
+    requirements_lock = "//third_party:requirements_lock.txt",
+)
+
+use_repo(pip, "pip")
+
