@@ -3,6 +3,7 @@ py_binary(
     srcs = ["calculator.py"],
     deps = [
     ],
+    visibility = ["//python_web:__pkg__"],
 )
 
 py_test(
