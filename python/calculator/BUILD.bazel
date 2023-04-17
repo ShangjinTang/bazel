@@ -1,0 +1,15 @@
+py_binary(
+    name = "calculator",
+    srcs = ["calculator.py"],
+    deps = [
+    ],
+)
+
+py_test(
+    name = "calculator_test",
+    srcs = ["calculator_test.py"],
+    deps = [
+        ":calculator",
+    ],
+)
+
