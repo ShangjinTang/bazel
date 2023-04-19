@@ -2,4 +2,4 @@
 
 A monorepo for bazel build upon multi programming language.
 
-`bzlmod` is preferred than non-`bzlmod`.
+This repo requires bazel by `bazel --enable_bzlmod`.
